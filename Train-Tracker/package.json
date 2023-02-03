@@ -1,0 +1,33 @@
+{
+  "name": "train-tracker",
+  "version": "1.0.0",
+  "description": "A Train Tracking app using Nodejs and Rapid API",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch",
+    "start": "nodemon `server/index.js`"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pooranjoyb/Train-Tracker.git"
+  },
+  "author": "pooranjoyb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pooranjoyb/Train-Tracker/issues"
+  },
+  "homepage": "https://github.com/pooranjoyb/Train-Tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
