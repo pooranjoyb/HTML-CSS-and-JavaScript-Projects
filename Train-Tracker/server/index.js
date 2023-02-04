@@ -1,6 +1,7 @@
 import express from 'express'
 import bp from 'body-parser'
 import dotenv from 'dotenv'
+import api from './api.js';
 
 dotenv.config()
 
@@ -18,6 +19,8 @@ app.use(bp.urlencoded({extended: false}))
 app.get('/', (req, res) => {
     res.render('../static/views/base', {title: "Train Tracker"});
 })
+
+app.post('/api', api);
 
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`)
