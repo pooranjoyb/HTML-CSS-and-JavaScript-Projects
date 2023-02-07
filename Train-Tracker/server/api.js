@@ -7,7 +7,26 @@ dotenv.config();
 
 api.use(express.json())
 api.post('/api', (req, res) => {
-    res.send(req.body.input)
+
+const url = process.env.URL;
+const searchField = req.body.input
+const options = {
+  method: 'POST',
+  headers: {
+    'content-type': 'application/json',
+    'X-RapidAPI-Key': process.env.API_KEY,
+    'X-RapidAPI-Host': process.env.API_HOST
+  },
+  body: `{"search":"${searchField}"}`
+};
+
+fetch(url, options)
+	.then(res => res.json())
+	.then(response => {
+        console.log(response)
+        res.send("Data found successfully")
+    })
+	.catch(err => console.error('error:' + err));
 })
 
 export default api;
