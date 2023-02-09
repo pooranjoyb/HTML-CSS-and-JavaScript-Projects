@@ -1,13 +1,26 @@
 # Indian Train Tracking App
-A web application for tracking Indian trains using Node.js as the backend, Tailwind CSS as the frontend, and RapidAPI for fetching information.
+#### A Web Application for tracking Indian trains that uses Node.js as the backend, Tailwind CSS as the frontend, and RapidAPI for fetching information.
+
+## This project is under DWOC'2023
+![DWOC'2023 Banner](https://github.com/pooranjoyb/HTML-CSS-and-JavaScript-Projects/blob/main/Train-Tracker/static/assets/dwoc.png)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Prerequisites
-Node.js
-Tailwind CSS
-RapidAPI account
+- Node.js
+- Tailwind CSS
+- RapidAPI account
+
+## Dependencies
+
+- Express (v4.18.2)
+- Body-Parser (v1.20.1)
+- Nodemon (v2.0.20)
+- EJS (v3.1.8)
+- Dotenv (v16.0.3)
+- Node-fetch (v3.3.0)
+
 ## Installing
 Clone the repository and install the required packages.
 
@@ -18,7 +31,7 @@ npm install
 ```
 
 ## Creating .env file
-Create a .env file in the root directory and add the following 
+Create a .env file in the `./Train-Tracker/` directory and add the following 
 ```py
 PORT=3000
 API_HOST='trains.p.rapidapi.com'
@@ -48,4 +61,4 @@ Pooranjoy Bhattacharya
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-Mr Shubham Singh for allowing me to contibuting to DWOC
+Thanking Mr Shubham Singh for giving me this oppurtunity to contribute in this event :)
