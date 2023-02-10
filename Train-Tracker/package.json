@@ -2,12 +2,12 @@
   "name": "train-tracker",
   "version": "1.0.0",
   "description": "A Train Tracking app using Nodejs and Rapid API",
-  "main": "server/index.js",
+  "main": "server/server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-css": "npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch",
-    "start": "nodemon `server/index.js`"
+    "start": "nodemon `server/server.js`"
   },
   "repository": {
     "type": "git",
