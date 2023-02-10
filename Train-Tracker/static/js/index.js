@@ -6,4 +6,22 @@ var addNewElement = () => {
 
 }
 
-// addNewElement()
+const getData = (search) => {
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({search})
+     };
+    fetch('/api', options).then(response =>
+        (response.json())).then(response => {
+            console.log(response)
+        })
+}
+
+submit.addEventListener("click", (e) => {
+    e.preventDefault();
+    getData(searchBtn.value)
+
+})
