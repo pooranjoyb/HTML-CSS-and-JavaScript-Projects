@@ -9,7 +9,7 @@ api.use(express.json())
 api.post('/api', (req, res) => {
 
 const url = process.env.URL;
-const searchField = req.body.input
+const searchField = req.body.search
 const options = {
   method: 'POST',
   headers: {
@@ -23,8 +23,8 @@ const options = {
 fetch(url, options)
 	.then(res => res.json())
 	.then(response => {
-        console.log(response)
-        res.send("Data found successfully")
+        // console.log(response)
+        res.send(response)
     })
 	.catch(err => console.error('error:' + err));
 })
